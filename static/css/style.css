@@ -16,7 +16,7 @@ main {
     background-image: url("../img/quote.png");
     background-size: contain;
     min-height: 340px;
-    min-width: 340px;
+    max-width: 340px;
     background-repeat: no-repeat;
     background-position: center;
 } /* Quote Image */
