@@ -1,3 +1,4 @@
+/* Google font and weight import */
 @import url('https://fonts.googleapis.com/css?family=Courgette:100, 200, 300, 400, 500, 600, 700, 800');
 
 #navbarColor03 ul li a {
@@ -19,13 +20,49 @@ body{
 .quote {
     background-image: url("../img/quote.png");
     background-size: contain;
-    min-height: 340px;
-    min-width: 340px;
+    height: 310px;
+    width: 300px;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center center; 
+    margin-top: 25px;
 } /* Quote Image */
 
 #loader {
     text-align: center;
     visibility: visible;
 }
+
+/* Search Results Area */
+
+.searchHeader {
+    font-family: 'Courgette', Apple Chancery;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+} /* Search Results Header */
+
+#output {
+    background-color:#648C91;
+    text-align: center;
+} /* Output Box Area */
+
+.bookPic, .title, .author, .rating, .desc {
+    font-family: 'Courgette', Apple Chancery;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.bookPic {
+   float: left;
+}
+
+..title {
+   display: inline;
+   padding-left: 0;
+   margin-left: 0;
+   width: 50%;
+}
+

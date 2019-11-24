@@ -17,7 +17,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="static/js/script.js"></script>
 </head>
-</head>
 <body>
 <header><!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,12 +44,18 @@
 </header>
 <main>
   <div class="container"> 
-    <div class="col-sm-12 quote"></div> <!-- Quote Img -->
+    <div class="col-sm-12 mx-auto quote"></div> <!-- Quote Img -->
     <div class="col-sm-12 col-md-8 col-lg-6 mx-auto input-group"> <!-- Search Field and button-->
       <input id = "searchField" type = "text" placeholder = "Search for Books" class = "form-control" oninput="loader()" />
       <button class = "btn btn-primary" id = "searchClick" onclick="getBookInfo()"><i class="fas fa-search"></i></button>
     </div>
-    <div id="output"></div> <!-- Book Search Output-->
+    <div class="hiddenUntil">
+      <div class="searchHeader">
+        <h2>Search Results</h2>
+      </div>
+      <div id="output">
+      </div> <!-- Book Search Output-->
+    </div>
   
   </div>
 </main>

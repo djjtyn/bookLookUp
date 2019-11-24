@@ -58,6 +58,7 @@ function iterate(bookInfo){
   }
     var list = bookInfo.items.map(function(list){
         return `
+        <div class = "wrap">
         <div class = "bookPic"
           ><img src ="${list.volumeInfo.imageLinks.thumbnail}"/>
         </div>
@@ -72,6 +73,7 @@ function iterate(bookInfo){
         </div>
         <div class="desc">
           ${list.volumeInfo.description}
+        </div>
         </div>`
     })
     return `${list}`
