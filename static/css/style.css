@@ -23,4 +23,5 @@ body {
 
 #loader {
     text-align: center;
+    visibility: visible;
 }
