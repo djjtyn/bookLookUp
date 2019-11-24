@@ -57,7 +57,22 @@ function iterate(bookInfo){
     </div>`;
   }
     var list = bookInfo.items.map(function(list){
-        return `<div class = "bookPic"><img src ="${list.volumeInfo.imageLinks.thumbnail}"/><div class = "title"><h6>Title: ${list.volumeInfo.title}</div><div class = "author"><h6>Author(s): ${list.volumeInfo.authors}</h6></div><div class = "rating"><p>Rating: ${list.volumeInfo.averageRating}</p></div><div class="desc">${list.volumeInfo.description}</div>`
+        return `
+        <div class = "bookPic"
+          ><img src ="${list.volumeInfo.imageLinks.thumbnail}"/>
+        </div>
+        <div class = "title">
+          <h6>Title: ${list.volumeInfo.title}</h6>
+        </div>
+        <div class = "author">
+          <h6>Author(s): ${list.volumeInfo.authors}</h6>
+        </div>
+        <div class = "rating">
+          <p>Rating: ${list.volumeInfo.averageRating}</p>
+        </div>
+        <div class="desc">
+          ${list.volumeInfo.description}
+        </div>`
     })
     return `${list}`
 }

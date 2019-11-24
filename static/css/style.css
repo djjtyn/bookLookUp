@@ -5,12 +5,13 @@
     margin-right: 15px;
 } /* NavBar Styling */
 
-body {
+body{
     height: 100%;
     background-image: url("../img/book-bg.png");
-    background-repeat: no-repeat;
     background-size: 100%;
-    background-color: #678F94
+    background-position: contain;
+    background-color: #678F94;
+    background-repeat: repeat-y;
 } /* BG Image */
 
 .quote {
