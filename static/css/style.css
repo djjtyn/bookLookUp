@@ -21,5 +21,6 @@ body {
     background-position: center; 
 } /* Quote Image */
 
-button {
+#loader {
+    text-align: center;
 }
