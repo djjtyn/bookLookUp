@@ -31,7 +31,7 @@ function getBookInfo() {
 // Assigning JSON data to the variable bookData and sending this response to iterate function which goes through the array
 // returned and created HTML out of it which is then used in this function.
       var bookData = response;
-      $("#output").html(iterate(userData));
+      $("#output").html(iterate(bookData));
     }, function(errorResponse) {
 //If the JSOn response is 404 the user will be informed that there is no book found for their search
             if (errorResponse.status === 404) {
