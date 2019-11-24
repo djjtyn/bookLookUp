@@ -1,0 +1,6 @@
+main {
+    height: 100%;
+    background-image: url("../img/book-bg.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
