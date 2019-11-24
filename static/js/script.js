@@ -46,7 +46,7 @@ function getBookInfo() {
         });
 }
 
-
+// Code which iterates throug the response array and assigns the array to HTML code 
 function iterate(bookInfo){
   if (bookInfo.length == 0)
   // if the JSON response array doesnt exist the user the be informed that there are no books matching the search 
