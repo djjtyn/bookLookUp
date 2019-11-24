@@ -1,6 +1,22 @@
+#navbarColor03 ul li a {
+    font-family: "Apple Chancery", sans-serif;
+    font-size: 20px;
+    padding-right: 15px;
+    margin-right: 15px;
+} /* NavBar Styling */
+
 main {
     height: 100%;
     background-image: url("../img/book-bg.png");
     background-repeat: repeat-y;
     background-size: 100%;
-}
+} /* BG Image */
+
+.quote {
+    background-image: url("../img/quote.png");
+    background-size: contain;
+    min-height: 340px;
+    min-width: 340px;
+    background-repeat: no-repeat;
+    background-position: center;
+} /* Quote Image */
