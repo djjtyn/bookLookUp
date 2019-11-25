@@ -59,21 +59,23 @@ function iterate(bookInfo){
     var list = bookInfo.items.map(function(list){
         return `
         <div class = "wrap">
-        <div class = "bookPic"
-          ><img src ="${list.volumeInfo.imageLinks.thumbnail}"/>
+        <div class = "bookPic mx-auto"
+          ><img src ="${list.volumeInfo.imageLinks.thumbnail}" alt = "No Picture found for this Book"/>
         </div>
-        <div class = "title">
+        <ul>
+        <li class = "title">
           <h6>Title: ${list.volumeInfo.title}</h6>
-        </div>
-        <div class = "author">
+        </li>
+        <li class = "author">
           <h6>Author(s): ${list.volumeInfo.authors}</h6>
-        </div>
-        <div class = "rating">
+        </li>
+        <li class = "rating">
           <p>Rating: ${list.volumeInfo.averageRating}</p>
-        </div>
-        <div class="desc">
+        </li>
+        <li class="desc">
           ${list.volumeInfo.description}
-        </div>
+        </li>
+        </ul>
         </div>`
     })
     return `${list}`
