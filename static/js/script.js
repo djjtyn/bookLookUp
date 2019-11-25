@@ -25,7 +25,7 @@ function getBookInfo() {
   }
   // When Statement with Google Books API address
   $.when(
-    $.getJSON(`https://www.googleapis.com/books/v1/volumes?q=${itemSearch}`)
+    $.getJSON(`https://www.googleapis.com/books/v1/volumes?q=${itemSearch}&maxResults=40`  )
   ).then( 
     function(response)   {
 // Assigning JSON data to the variable bookData and sending this response to iterate function which goes through the array
@@ -58,11 +58,10 @@ function iterate(bookInfo){
   }
     var list = bookInfo.items.map(function(list){
         return `
-        <div class = "wrap">
-        <div class = "bookPic mx-auto"
-          ><img src ="${list.volumeInfo.imageLinks.thumbnail}" alt = "No Picture found for this Book"/>
-        </div>
         <ul>
+        <li class = "bookPic">
+          <img src ="${list.volumeInfo.imageLinks.thumbnail}" alt = "No Picture found for this Book"/>
+        </li>
         <li class = "title">
           <h6>Title: ${list.volumeInfo.title}</h6>
         </li>
