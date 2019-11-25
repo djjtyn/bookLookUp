@@ -33,6 +33,10 @@ body{
 }
 
 /* Search Results Area */
+.hiddenUntil {
+    visibility: hidden;
+}
+
 
 .searchHeader {
     font-family: 'Courgette', Apple Chancery;

@@ -3,7 +3,10 @@ $(document).ready(function() {
 // Code to hide loader GIF once search button is clicked
     $(".btn-primary").click(function() {
         $("#loader").css("visibility","hidden")
+        $(".quote").fadeOut("slow")
+        $(".hiddenUntil").css("visibility", "visible")
     })
+    
 })
 
 //Code to show gif while user is typing into search field
@@ -56,7 +59,7 @@ function iterate(bookInfo){
       No books matching that search.
     </div>`;
   }
-    var list = bookInfo.items.map(function(list){
+    var list = bookInfo.items.map(function(list) {
         return `
         <ul>
         <li class = "bookPic">
@@ -76,6 +79,8 @@ function iterate(bookInfo){
         </li>
         </ul>
         </div>`
+        
     })
+    
     return `${list}`
 }
