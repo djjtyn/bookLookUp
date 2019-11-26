@@ -60,7 +60,7 @@ function iterate(bookInfo){
   }
     var list = bookInfo.items.map(function(list) {
         list.volumeInfo.averageRating = list.volumeInfo.averageRating || 
-        'No Ratings for this Book yet.<button src "https://books.google.ie/books?q=" + {itemSearch} + "kotPYEqx7kMC&sitesec=reviews">Rate</button>';
+        'No Ratings for this Book yet.';
         return `
     <div class ="arrayReturn">
         <div class = "bookPic col-sm-12 col-lg-2">
