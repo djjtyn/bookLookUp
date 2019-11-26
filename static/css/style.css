@@ -71,7 +71,7 @@ body{
 
 .arrayReturn ul li {
     list-style: none;
-    text-align: center;
+    padding: 15px;
 }
 
 .bookPic {
@@ -80,22 +80,31 @@ body{
     text-align: center; 
 }
 
-.arrayReturn {
-    display: table-cell;
-}
-
 /* Media Queries */
 @media (max-width:767px) {
-    .bookPic{
+    .bookPic {
     text-align: center
-    }
-} /* Book Picture is centre aligned on screen sizes up to 767px */
+    } /* Book Picture is centre aligned on screen sizes up to 767px */
+    .arrayReturn ul li {
+    text-align: center;    
+    } /* Title, author & rating are centre aligned on screen sizes up to 767px */
+} 
 
 @media (min-width:992px) {
-    .bookPic{
+    .bookPic {
     text-align: left;
-    }
-} /* Book Picture is aligned to the left  on screen sizes up to 992px and above */
+    } /* Book Picture is aligned to the left  on screen sizes 992px and above */
+    .arrayReturn ul li  {
+    text-align: left;
+    transform: translateX(-30px);    
+    } /* Title, author & rating are aligned and moved horizontantly to the left on screen sizes 992px and above */
+} 
+
+@media (min-width:1280px) {
+    .arrayReturn ul li {
+        transform: translateX(-60px);
+    } /* Title, author & rating are moved horizontantly to the left on screen sizes 1280px and above */
+}
 
 
 
