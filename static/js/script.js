@@ -3,10 +3,9 @@ $(document).ready(function() {
 // Code to hide loader GIF once search button is clicked
     $(".btn-primary").click(function() {
         $("#loader").css("visibility","hidden")
-        $(".quote").fadeOut("slow")
+        $(".quote").fadeOut("fast")
         $(".hiddenUntil").css("visibility", "visible")
     })
-    
 })
 
 //Code to show gif while user is typing into search field
@@ -60,6 +59,8 @@ function iterate(bookInfo){
     </div>`;
   }
     var list = bookInfo.items.map(function(list) {
+        list.volumeInfo.averageRating = list.volumeInfo.averageRating || 
+        'No Ratings for this Book yet.<button src "https://books.google.ie/books?q=" + {itemSearch} + "kotPYEqx7kMC&sitesec=reviews">Rate</button>';
         return `
     <div class ="arrayReturn">
         <div class = "bookPic col-sm-12 col-lg-2">
@@ -82,8 +83,8 @@ function iterate(bookInfo){
           ${list.volumeInfo.description}
         </div>
     </div>`
-        
     })
     
     return `${list}`
+    
 }

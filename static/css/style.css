@@ -51,6 +51,7 @@ body{
     text-align: center;
 } /* Output Box Area */
 
+
 .bookPic, .title, .author, .rating, .desc {
     font-family: 'Courgette', Apple Chancery;
     color: #fff;
