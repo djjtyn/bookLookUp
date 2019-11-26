@@ -61,10 +61,12 @@ function iterate(bookInfo){
   }
     var list = bookInfo.items.map(function(list) {
         return `
-        <ul>
-        <li class = "bookPic">
+    <div class ="arrayReturn">
+        <div class = "bookPic col-sm-12 col-lg-2">
           <img src ="${list.volumeInfo.imageLinks.thumbnail}" alt = "No Picture found for this Book"/>
-        </li>
+        </div>
+        <div class = row>
+        <ul class = "col-sm-12 col-lg-10">
         <li class = "title">
           <h6>Title: ${list.volumeInfo.title}</h6>
         </li>
@@ -74,11 +76,12 @@ function iterate(bookInfo){
         <li class = "rating">
           <p>Rating: ${list.volumeInfo.averageRating}</p>
         </li>
-        <li class="desc">
-          ${list.volumeInfo.description}
-        </li>
+        </div>
         </ul>
-        </div>`
+        <div class="desc">
+          ${list.volumeInfo.description}
+        </div>
+    </div>`
         
     })
     

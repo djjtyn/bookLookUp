@@ -55,21 +55,48 @@ body{
     font-family: 'Courgette', Apple Chancery;
     color: #fff;
     letter-spacing: 2px;
-    padding: 15px;
-    margin: 5px;
     text-align: center;
 }
 
-ul {
+.desc {
+    clear: both;
+} /* Allows the book description to not have anything else either side of it */
+
+.arrayReturn {
+    display: table;
     border: 1px solid #fff;
     border-radius: 15%;
-    margin: 5px;
+
 }
 
-li {
+.arrayReturn ul li {
     list-style: none;
     text-align: center;
 }
+
+.bookPic {
+    display: table-cell;
+    float: left;
+    text-align: center; 
+}
+
+.arrayReturn {
+    display: table-cell;
+}
+
+/* Media Queries */
+@media (max-width:767px) {
+    .bookPic{
+    text-align: center
+    }
+} /* Book Picture is centre aligned on screen sizes up to 767px */
+
+@media (min-width:992px) {
+    .bookPic{
+    text-align: left;
+    }
+} /* Book Picture is aligned to the left  on screen sizes up to 992px and above */
+
 
 
 
