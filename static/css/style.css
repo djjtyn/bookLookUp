@@ -60,49 +60,58 @@ body{
 
 .desc {
     clear: both;
+    padding: 5px;
+    text-align: justify;
 } /* Allows the book description to not have anything else either side of it */
 
 .arrayReturn {
-    display: table;
     border: 1px solid #fff;
-    border-radius: 15%;
-
+    border-radius: 5%;
 }
 
-.arrayReturn ul li {
+.arrayReturn ul {
+    height: 150px;
+    margin-bottom: 5;
     list-style: none;
-    padding: 15px;
+    padding: 5px;
 }
 
 .bookPic {
-    display: table-cell;
     float: left;
     text-align: center; 
 }
 
+.titleSection {
+    margin-bottom: 0px;
+}
+
 /* Media Queries */
-@media (max-width:767px) {
+@media (max-width:991px) {
     .bookPic {
-    text-align: center
-    } /* Book Picture is centre aligned on screen sizes up to 767px */
+    text-align: center;
+    padding: 10px;
+    } /* Book Picture is centre aligned on screen sizes up to 991px and padding is assigned */
     .arrayReturn ul li {
-    text-align: center;    
-    } /* Title, author & rating are centre aligned on screen sizes up to 767px */
+    text-align: center; 
+    padding: 10px;   
+    } /* Title, author & rating are centre aligned on screen sizes up to 991px and padding is added */
 } 
 
 @media (min-width:992px) {
     .bookPic {
     text-align: left;
+    padding: 20px;
     } /* Book Picture is aligned to the left  on screen sizes 992px and above */
     .arrayReturn ul li  {
     text-align: left;
-    transform: translateX(-30px);    
+    transform: translateX(-20px);
+    padding: 20px;    
     } /* Title, author & rating are aligned and moved horizontantly to the left on screen sizes 992px and above */
 } 
 
 @media (min-width:1280px) {
     .arrayReturn ul li {
-        transform: translateX(-60px);
+        transform: translateX(-50px);
     } /* Title, author & rating are moved horizontantly to the left on screen sizes 1280px and above */
 }
 

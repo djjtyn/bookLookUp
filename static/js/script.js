@@ -65,7 +65,7 @@ function iterate(bookInfo){
         <div class = "bookPic col-sm-12 col-lg-2">
           <img src ="${list.volumeInfo.imageLinks.thumbnail}" alt = "No Picture found for this Book"/>
         </div>
-        <div class = row>
+        <div class = "row titleSection">
         <ul class = "col-sm-12 col-lg-10">
         <li class = "title">
           <h6>Title: ${list.volumeInfo.title}</h6>
@@ -76,8 +76,8 @@ function iterate(bookInfo){
         <li class = "rating">
           <p>Rating: ${list.volumeInfo.averageRating}</p>
         </li>
-        </div>
-        </ul>
+       </ul>
+       </div>
         <div class="desc">
           ${list.volumeInfo.description}
         </div>
