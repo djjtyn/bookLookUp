@@ -51,7 +51,6 @@ body{
 } /* Search Results Header */
 
 #output {
-    background-color:#648C91;
     text-align: center;
 } /* Output Box Area */
 
@@ -71,6 +70,7 @@ body{
 .arrayReturn {
     border: 1px solid #fff;
     border-radius: 5%;
+    background-color:#648C91;
 }
 
 .arrayReturn ul {
