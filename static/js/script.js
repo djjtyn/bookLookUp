@@ -36,7 +36,7 @@ function getBookInfo() {
       $("#output").html(iterate(bookData));
     }, function(errorResponse) {
 //If the JSOn response is 404 the user will be informed that there is no book found for their search
-            if (errorResponse.status === 404) {
+            if (errorResponse.status !== 200) {
                 $("#output").html(
                     `<h2>No Book found for ${itemSearch}</h2>`);
             } else {
@@ -54,8 +54,8 @@ function iterate(bookInfo){
   // if the JSON response array doesnt exist the user the be informed that there are no books matching the search 
   {
     return `
-    <div">
-      No books matching that search.
+    <div>
+     <h4> No books matching that search.</h4>
     </div>`;
   }
     var list = bookInfo.items.map(function(list) {
