@@ -59,10 +59,11 @@ function iterate(bookInfo){
     </div>`;
   }
     var list = bookInfo.items.map(function(list) {
+      
         list.volumeInfo.averageRating = list.volumeInfo.averageRating || 
         'No Ratings for this Book yet.';
         return `
-    <div class ="arrayReturn">
+        <div class ="arrayReturn">
         <div class = "bookPic col-sm-12 col-lg-2">
           <img src ="${list.volumeInfo.imageLinks.thumbnail}" alt = "No Picture found for this Book"/>
         </div>
@@ -84,7 +85,7 @@ function iterate(bookInfo){
         </div>
     </div>`
     })
-    
+   
     return `${list}`
     
 }
