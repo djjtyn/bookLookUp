@@ -1,5 +1,5 @@
 /* Google font and weight import */
-@import url('https://fonts.googleapis.com/css?family=Courgette:100, 200, 300, 400, 500, 600, 700, 800');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 #navbarColor03 ul li a {
     font-family: "Apple Chancery", sans-serif;
@@ -43,7 +43,7 @@ body{
 
 
 .searchHeader {
-    font-family: "Courgette", Apple Chancery;
+    font-family: "Apple Chancery",sans-serif;
     font-weight: 700;
     color: #fff;
     text-align: center;
@@ -56,9 +56,9 @@ body{
 
 
 .bookPic, .title, .author, .rating, .desc {
-    font-family: 'Courgette', Apple Chancery;
+    font-family: 'Lato', sans-serif;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
 }
 
