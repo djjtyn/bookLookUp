@@ -6,6 +6,13 @@ $(document).ready(function() {
         $(".quote").fadeOut("fast")
         $(".hiddenUntil").css("visibility", "visible")
     })
+// Following code was taken from stack overflow:
+// https://stackoverflow.com/questions/155188/trigger-a-button-click-with-javascript-on-the-enter-key-in-a-text-box    
+    $("#searchField").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#searchClick").click();
+    }
+});
 })
 
 //Code to show gif while user is typing into search field
