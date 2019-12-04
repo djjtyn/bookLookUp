@@ -15,6 +15,9 @@ $(document).ready(function() {
 });
 })
 
+var _maxResults = 10;
+var _startIndex = 0;
+
 //Code to show gif while user is typing into search field
 function loader() {
     $("#output").html(
@@ -34,13 +37,14 @@ function getBookInfo() {
   }
   // When Statement with Google Books API address
   $.when(
-    $.getJSON(`https://www.googleapis.com/books/v1/volumes?q=${itemSearch}&maxResults=40`  )
+    $.getJSON(`https://www.googleapis.com/books/v1/volumes?q=${itemSearch}&startIndex=${_startIndex}&maxResults=${_maxResults}`  )
   ).then( 
     function(response)   {
 // Assigning JSON data to the variable bookData and sending this response to iterate function which goes through the array
 // returned and created HTML out of it which is then used in this function.
       var bookData = response;
-      $("#output").html(iterate(bookData));
+      $("#output").html(iterate(bookData))
+;
     }, function(errorResponse) {
 //If the JSOn response is 404 the user will be informed that there is no book found for their search
             if (errorResponse.status !== 200) {
