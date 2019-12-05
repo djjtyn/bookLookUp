@@ -100,3 +100,8 @@ function iterate(bookInfo){
     return `${list}`
     
 }
+
+function load_next_page() {
+  _startIndex+=_maxResults+1;
+  return getBookInfo();
+}

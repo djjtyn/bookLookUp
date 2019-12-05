@@ -35,7 +35,6 @@ body{
     visibility: visible;
 }
 
-
 /* Search Results Area */
 .hiddenUntil {
     visibility: hidden;
@@ -107,6 +106,14 @@ footer p {
     margin-bottom: 0px;
 }
 
+/* Pagination */
+.nxt {
+    float: right;
+}
+
+.prev {
+    float: left;
+}
 
 
 /* Media Queries */
