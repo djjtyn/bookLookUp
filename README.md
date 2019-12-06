@@ -33,4 +33,5 @@ screen.
 
 ### Wireframes
 ![image](static/img/wireFrame/beforeSearch.png)
+![image](static/img/wireFrame/afterSearch.png)
 
