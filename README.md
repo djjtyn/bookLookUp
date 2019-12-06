@@ -31,3 +31,6 @@ Before doing the search, there is a quote from Dr. Seuss which highlights an adv
 Once the search function is in progress, this quote disappears from the screen and the search bar area jusmps to the tope of the
 screen. 
 
+### Wireframes
+![image](static/img/wireFrame/beforeSearch.png)
+
