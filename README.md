@@ -15,10 +15,15 @@ As a user, I want to find what the average rating of a book is. This is achieved
 results will show an average rating for the book.
 As a user, I want to read some book descriptions for various books. This is done by typing a search query into the searchbar
 and the results will have descriptions for the results.
+The site is also designed towards people who may be looking for recommendation for books to read which I have included in 
+the navigation bar of the page. All the navigation headings lead to corresponding Amazon book pages containing book recommendations.
+As a user, I want to find some newly released books which I can achieve by clicking on the New Releases header in the navigation
+bar which will take me to Amazons list of newly released books.
+As a user, I want to find some books which are best sellers. I can achieve this by clicking on the Best Sellers header in 
+the navigation bar which will take me to a list of Amazons best selling books.
+As a user, I want to find a good book released this month which I can achieve by clicking on the Book of the Month header
+in the navigation bar which will take me to a page containing Amazons book of the month.
 
-The site is also designed towards people who 
-may be looking for recommendation for books to read which I have included in the navigation bar of the page. All the
-navigation headings lead to corresponding Amazon book pages containing book recommendations.
 I chose the background image of the site to be an animated library with an open space in between two bookshelves.
 When the search results are returned these search results are output onto the open space between the two bookshelves which
 frames the search results. 
