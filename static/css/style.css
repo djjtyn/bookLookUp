@@ -107,6 +107,10 @@ footer p {
 }
 
 /* Pagination */
+#pagination_id {
+visibility: hidden;
+}
+
 .nxt {
     float: right;
 }

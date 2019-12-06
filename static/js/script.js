@@ -5,6 +5,7 @@ $(document).ready(function() {
         $("#loader").css("visibility","hidden")
         $(".quote").fadeOut("fast")
         $(".hiddenUntil").css("visibility", "visible")
+        $("#pagination_id").css("visibility", "visible")
     })
 // Following code was taken from stack overflow:
 // https://stackoverflow.com/questions/155188/trigger-a-button-click-with-javascript-on-the-enter-key-in-a-text-box    
