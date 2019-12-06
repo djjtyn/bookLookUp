@@ -32,6 +32,10 @@ Once the search function is in progress, this quote disappears from the screen a
 screen. 
 
 ### Wireframes
+
+#### Before searching for anything
 ![image](static/img/wireFrame/home.png)
+
+#### After searching for something
 ![image](static/img/wireFrame/afterSearch.png)
 
