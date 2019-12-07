@@ -59,6 +59,7 @@ function getBookInfo() {
                     `<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
             }
         });
+        return;
 }
 
 // Code which iterates throug the response array and assigns the array to HTML code 
@@ -110,11 +111,11 @@ function load_next_page() {
 
 function hideButton() {
      var test = $("#searchField").val();
-     if (test.length === 0) {
+     if (test.length === 0 && !getBookInfo()) {
          $('button.nxt').hide();
          $('button.prev').hide();
      } else {
         $('button.nxt').show(); 
-        $('button.prev').show();
+        $('button.prev').hide();
      }
 }

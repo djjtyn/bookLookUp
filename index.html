@@ -11,11 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BookLookUp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="static/css/style.css" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="static/js/script.js"></script>
 </head>
 <body>
 <header><!-- NavBar -->
@@ -48,7 +45,7 @@
   <div class="container"> 
     <div class="col-sm-12 mx-auto quote"></div> <!-- Quote Img -->
     <div class="col-sm-12 col-md-8 col-lg-6 mx-auto input-group"> <!-- Search Field and button-->
-      <input id = "searchField" type = "text" placeholder = "Search for Books" class = "form-control" oninput="loader(); hideButton()" />
+      <input id = "searchField" type = "text" placeholder = "Search for Books" class = "form-control" oninput="loader(); hideButtons()" />
       <button class = "btn btn-primary" id = "searchClick" onclick="getBookInfo()"><i class="fas fa-search"></i></button>
     </div>
     <div class="hiddenUntil">
@@ -67,12 +64,14 @@
 <br>
 <footer class ="page-footer container-fluid">
 
-<p>&copy 2019 David Tynan Milestone Project 2</p>
+<p>&copy; 2019 David Tynan Milestone Project 2</p>
 
 
 </footer>
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="static/js/script.js"></script>
 </body>
 </html>
