@@ -102,10 +102,18 @@ function iterate(bookInfo){
    
     return `${list}
     <div id="pagination_id">
-        <button class="nxt" onclick="load_next_page()">Next Page</button>
+        <button class="nxt" onclick="timedLoads();">Next Page</button>
         <button class="prev" onclick="load_prev_page()">Previous Page</button>
       </div>`
     
+}
+
+function timedLoads(){
+    setTimeout(load_next_page, 500)
+    setTimeout(scrollToTop, 1000)
+}
+function scrollToTop(){
+    window.scrollTo(0, 0);
 }
 
 function load_next_page() {
