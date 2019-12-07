@@ -14,8 +14,8 @@ $(document).ready(function() {
         $("#searchClick").click();
     }
 });
-$("#searchField").change(hideButton)
 })
+
 
 var _maxResults = 10;
 var _startIndex = 0;
@@ -109,5 +109,12 @@ function load_next_page() {
 }
 
 function hideButton() {
-     $("button.nxt").hide()
+     var test = $("#searchField").val();
+     if (test.length === 0) {
+         $('button.nxt').hide();
+         $('button.prev').hide();
+     } else {
+        $('button.nxt').show(); 
+        $('button.prev').show();
+     }
 }
