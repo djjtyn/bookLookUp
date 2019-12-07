@@ -73,7 +73,8 @@ function iterate(bookInfo) {
     </div>`;
     }
     var list = bookInfo.items.map(function (list) {
-
+         list.volumeInfo.description = list.volumeInfo.description ||
+            'No description available for this book yet';
         list.volumeInfo.averageRating = list.volumeInfo.averageRating ||
             'No Ratings for this Book yet.';
         return `
@@ -102,7 +103,7 @@ function iterate(bookInfo) {
 
     return `${list}
     <div id="pagination_id">
-        <button class="nxt" onclick="timedNextLoad();">Next Page</button>
+        <button class="nxt" onclick="timedNextLoad()">Next Page</button>
         <button class="prev" onclick="timedPrevLoad()">Previous Page</button>
       </div>`
 
@@ -131,3 +132,4 @@ function load_prev_page() {
     _startIndex = _startIndex - _maxResults - 1;
     return getBookInfo();
 }
+
