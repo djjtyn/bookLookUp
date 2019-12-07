@@ -96,6 +96,7 @@ footer {
     height: 30px;
     letter-spacing: 2px;
     opacity:0.9;
+    margin-top: 20px;
 }
 
 footer p {
@@ -104,13 +105,10 @@ footer p {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
+    clear: both;
 }
 
 /* Pagination */
-#pagination_id {
-min-width: 100%;
-}
-
 .nxt {
     float: right;
 }

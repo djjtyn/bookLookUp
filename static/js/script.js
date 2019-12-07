@@ -100,7 +100,11 @@ function iterate(bookInfo){
     </div>`
     })
    
-    return `${list}`
+    return `${list}
+    <div id="pagination_id">
+        <button class="nxt" onclick="load_next_page()">Next Page</button>
+        <button class="prev" onclick="load_prev_page()">Previous Page</button>
+      </div>`
     
 }
 
@@ -109,15 +113,14 @@ function load_next_page() {
   return getBookInfo();
 }
 
-function hideButton() {
+/*function hideButtons() {
      var test = $("#searchField").val();
-     if (test.length === 0 && !getBookInfo()) {
-         console.log(test.length)
-         console.log(getBookInfo())
+    //  if ($("#searchField").val() === 0 || getBookInfo()) {
+     if (test.length === 0 || getBookInfo()) {
          $('button.nxt').hide();
          $('button.prev').hide();
      } else {
         $('button.nxt').show(); 
-        $('button.prev').hide();
+        $('button.prev').show();
      }
-}
+}*/
