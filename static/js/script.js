@@ -112,6 +112,8 @@ function load_next_page() {
 function hideButton() {
      var test = $("#searchField").val();
      if (test.length === 0 && !getBookInfo()) {
+         console.log(test.length)
+         console.log(getBookInfo())
          $('button.nxt').hide();
          $('button.prev').hide();
      } else {
