@@ -14,6 +14,7 @@ $(document).ready(function() {
         $("#searchClick").click();
     }
 });
+$("#searchField").change(hideButton)
 })
 
 var _maxResults = 10;
@@ -105,4 +106,8 @@ function iterate(bookInfo){
 function load_next_page() {
   _startIndex+=_maxResults+1;
   return getBookInfo();
+}
+
+function hideButton() {
+     $("button.nxt").hide()
 }

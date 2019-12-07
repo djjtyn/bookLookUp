@@ -108,7 +108,7 @@ footer p {
 
 /* Pagination */
 #pagination_id {
-visibility: hidden;
+min-width: 100%;
 }
 
 .nxt {
