@@ -112,15 +112,3 @@ function load_next_page() {
   _startIndex+=_maxResults+1;
   return getBookInfo();
 }
-
-/*function hideButtons() {
-     var test = $("#searchField").val();
-    //  if ($("#searchField").val() === 0 || getBookInfo()) {
-     if (test.length === 0 || getBookInfo()) {
-         $('button.nxt').hide();
-         $('button.prev').hide();
-     } else {
-        $('button.nxt').show(); 
-        $('button.prev').show();
-     }
-}*/
