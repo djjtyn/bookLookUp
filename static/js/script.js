@@ -128,6 +128,6 @@ function load_next_page() {
 }
 
 function load_prev_page() {
-    _startIndex += _maxResults -1;
+    _startIndex = _startIndex - _maxResults - 1;
     return getBookInfo();
 }
