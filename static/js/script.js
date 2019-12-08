@@ -102,6 +102,10 @@ function iterate(bookInfo) {
     })
 
     return `
+    <div id="pagination_id">
+        <button class="nxt" onclick="timedNextLoad()">Next Page</button>
+        <button class="prev" onclick="timedPrevLoad()">Previous Page</button>
+      </div>
       <div class="searchHeader">
         <h2>Search Results</h2>
       </div>
