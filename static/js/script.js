@@ -101,7 +101,11 @@ function iterate(bookInfo) {
     </div>`
     })
 
-    return `${list}
+    return `
+      <div class="searchHeader">
+        <h2>Search Results</h2>
+      </div>
+      ${list}
     <div id="pagination_id">
         <button class="nxt" onclick="timedNextLoad()">Next Page</button>
         <button class="prev" onclick="timedPrevLoad()">Previous Page</button>
