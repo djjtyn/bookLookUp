@@ -111,25 +111,41 @@ footer p {
 
 /* Pagination */
 button.nxt {
-  color:#fff;
+  color:black;
   font-family: 'Lato', sans-serif;
   float: right;
-  background-color: #678F94;
+  background-color:red;
   border: 1px solid #000;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
-}
+  cursor: pointer;
+  transition-timing-function: ease-in;
+} /* Styling for the next pagination button */
+
+button.nxt:hover {
+  color:red;
+  background-color:black;
+  transition-duration: .5s;
+} /* Next button hover actions */
 
 button.prev {
-  color:#fff;
+  color:black;
   font-family: 'Lato', sans-serif;
   float: left;
-  background-color: #678F94; 
+  background-color: red; 
   border: 1px solid #000;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
+  cursor: pointer;
+  transition-timing-function: ease-in;
+} /* Styling for the previous pagination button */
+
+button.prev:hover {
+  color:red;
+  background-color:black;
+  transition-duration: .5s;
 }
 
 
