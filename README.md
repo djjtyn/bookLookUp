@@ -83,6 +83,10 @@ By clicking this button the user would be taken to a website which they can purc
 * JQuery: this project utilses jQuery by hiding the image of the quotation once the user has submitted a search query, moving
 the search bar to the top of the screen when a search query is submitted, showing the book results output section when a search
 query is submitted and allowing the enter keyboard key to submit a search query.
+JQuery is also used to simplify DOM manipulation.
+## Testing
+HTML Validation was done using the validator found at "https://validator.w3.org/". This validation test returned no errors.
+![image](static/img/htmlvalidation.png)
 
 
 
