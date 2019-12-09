@@ -50,7 +50,7 @@ The pagination buttons change font and background color with a smooth transition
 cursor also changes to a pointer.</p>
 
 ## Features
-###Existing Features
+### Existing Features
 * Search Bar: The search bar allows the user to type in a book or author name. Once this is entered they can either press
 enter on the keyboard or click the magnifying glass to submit their search.
 * Navigation Bar
@@ -64,12 +64,27 @@ enter on the keyboard or click the magnifying glass to submit their search.
 search query. Each book result returns the books name, authors, picture, average rating and descriptionwhere avaiable. This 
 makes use of the Google Books API and I came across some books which dont have a rating or description so for these I have
 coded a default message for the user so that these areas dont return undefined.
-###Features Left To Implement
+### Features Left To Implement
 * Add Rating : An add rating feature could be implemented in the future which would allow the user to add their own rating
 of the book by clicking a button and selecting an option out of 5 which they would rate the book.
 * Add Description: For the Google Books book results that dont have a description yet a Add Description option could be 
 included in the default return which would take the user to a page at which they can add their own description for the book.
 * Buy Now: A 'buy now' option could be implemented in the future which would be a button which has a value of buy now in it.
 By clicking this button the user would be taken to a website which they can purchase the book from.
+## Technologies Used
+ * HTML: This project uses HTML to provide the structure of the pages. 
+ * CSS: This project uses CSS to provide styling to the HTML structure.
+ * Bootstrap: I have used bootstrap in this project to help provide further structure to the page and aid the responsivness
+ of the site.
+ * JavaScript: I have used Javascript to write functions for the site. These consist of getting the JSON response from the 
+ Google Books API, allowing the user to search for a particular query, allow the screen to show a loading gif while the user
+ is searching, outputting this response data in a particular way, allowing the pagination buttons to load pages in the 
+ results and scrolling to the top of of the book list for every newly loaded page of results in a timely manner.
+* JQuery: this project utilses jQuery by hiding the image of the quotation once the user has submitted a search query, moving
+the search bar to the top of the screen when a search query is submitted, showing the book results output section when a search
+query is submitted and allowing the enter keyboard key to submit a search query.
+
+
+
 
 
