@@ -93,6 +93,12 @@ HTML Validation was done using the validator found at "https://validator.w3.org/
 CSS Validation was done using the validator found at "https://jigsaw.w3.org/css-validator/". This validation test returned
 no errors.
 ![image](static/img/cssvalidation.png)
+* Loading Anmiation: 
+
+I first included the loading animation in the function which contained the getJson url command but noticed that this wasnt
+working on any more searches after the first. I then created a new function specifically for the loading animation and then
+used it as the value of the oninput attribute for the input element which worked after I completed a search for more than
+one bok in a row.
 
 
 

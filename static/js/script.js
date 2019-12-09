@@ -47,15 +47,18 @@ function getBookInfo() {
             $("#output").html(iterate(bookData))
                 ;
         }, function (errorResponse) {
-            //If the JSOn response is 404 the user will be informed that there is no book found for their search
-            if (errorResponse.status !== 200) {
+            //If the JSOn response anything other than 200 the user will be informed that there is no book found for 
+            //their search
+            if (this.readyState == 4 && this.status == 200) {
                 $("#output").html(
-                    `<h2>No Book found for ${itemSearch}</h2>`);
+                    `<h2 class="searchHeader">No Book found for ${itemSearch}</h2>`);
             } else {
                 // If the error is any other code the user will be informed there is an error using the built in error response of the JSON file
                 console.log(errorResponse);
                 $("#output").html(
-                    `<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
+                    `<h2 class = "searchHeader">
+                      Error: Please try another search by clicking on the book icon in the navigation bar
+                     </h2>`);
             }
         });
     return;
@@ -137,8 +140,7 @@ function load_next_page() {
 
 function load_prev_page() {
     _startIndex = _startIndex - _maxResults - 1;
-    if (_startIndex= 1){
     return getBookInfo();
     }
-}
+
 
