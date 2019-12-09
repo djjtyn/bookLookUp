@@ -1,8 +1,10 @@
 # BookLookUp 
-<p>This project is a search engine which allows users to search for books or authors of their choice.
-The search results return a picture of the book, the books title, the books author, an average rating 
-(out of 5) for the book and a description of the book where available. The project makes use of the Google Books API to 
-achieve this result.</p>
+This project is a search engine which allows users to search for books or authors of their choice.The search results return
+a picture of the book, the books title, the books author, an average rating (out of 5) for the book and a description of 
+the book where available. The project makes use of the Google Books API to achieve this result.
+
+## Website URL 
+The website can be viewed by using this link: https://djjtyn.github.io/bookLookUp/
 
 ## UX
 <p>This site is designed for people who are interested in reading books and would like to find out some information
@@ -80,6 +82,7 @@ By clicking this button the user would be taken to a website which they can purc
  Google Books API, allowing the user to search for a particular query, allow the screen to show a loading gif while the user
  is searching, outputting this response data in a particular way, allowing the pagination buttons to load pages in the 
  results and scrolling to the top of of the book list for every newly loaded page of results in a timely manner.
+ Javascript is also used to simplify DOM manipulation.
 * JQuery: this project utilses jQuery by hiding the image of the quotation once the user has submitted a search query, moving
 the search bar to the top of the screen when a search query is submitted, showing the book results output section when a search
 query is submitted and allowing the enter keyboard key to submit a search query.
@@ -87,6 +90,9 @@ JQuery is also used to simplify DOM manipulation.
 ## Testing
 HTML Validation was done using the validator found at "https://validator.w3.org/". This validation test returned no errors.
 ![image](static/img/htmlvalidation.png)
+CSS Validation was done using the validator found at "https://jigsaw.w3.org/css-validator/". This validation test returned
+no errors.
+![image](static/img/cssvalidation.png)
 
 
 
