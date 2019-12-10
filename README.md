@@ -111,7 +111,7 @@ used it as the value of the oninput attribute for the input element which worked
 one bok in a row.
 
 * Pagination:
- * Page Selection: The Google Books API response doesnt return a pre and next response so I had to create these myself and have each book listing
+  * Page Selection: The Google Books API response doesnt return a pre and next response so I had to create these myself and have each book listing
 only show 10 results per page. I did this by creating max results and start indext variables and making use of these. I included
 both these variables in the getJson url. The max results variable was always set at 10. I then created a function to load 
 the next page and another to load the previous page. 
@@ -124,9 +124,18 @@ For the load previous page function I set the start index to equal the start ind
 used console log to check that the start index variable had a value. I then ran the function containing the getJson method 
 within this function. I created a previous button and assigned the load previous page function to it's onclick attribute so
 that I was able to test the function by clicking the button and checking to see if the next page loaded.
- *New and previous page scrolling to the top of the list: To ensure that anytime the user clicked the previous or next buttons
-that the new list atarted at the top allowing the user to scroll downward through the list again, I had to create a function
-called scrollToTop.
+  *  Page Scrolling: To ensure that anytime a user clicked the previous or next buttons that the new list started at the 
+top allowing the user to scroll downward through the list again, I had to create a function called scrollToTop. I then created
+a function which set 2 timeouts. This function contains the scrollToTop function and the function to load the next
+page and I had to set a timed timeout to make sure that the pages were only scrolling to the top once the next page had already
+loaded. I tested this by trying different time duration for each of the parents child functions and clicking the next button
+to ensure that the page was scrolling to the top of the list when the next page had loaded. I also did this for the previous
+pages and tested using the same method.
+* Json Response: I had to check that I was receiving a response from the Google Books API which I did by logging the response
+to the console. I then noticed that some of the results were returning undefined so had to create a default value for these
+response returns. I tested this by outputting the response to the console using template literals within a function after coding
+a bit of code that gave the undefined response returns a custom value and searching for books that I kew had undefined values.
+
 
 
 
