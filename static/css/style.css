@@ -16,9 +16,6 @@ body{
     background-attachment: fixed;
 } /* BG Image */
 
-.input-group {
-    height: 20px;
-}
 .quote {
     background-image: url("../img/quote.png");
     background-size: contain;
@@ -32,39 +29,29 @@ body{
 #loader {
     text-align: center;
     visibility: visible;
-}
+} /* loader styling */
 
-/* Search Results Area */
 .hiddenUntil {
     visibility: hidden;
-}
-
+} /* Search Results Area hidden until search submitted */
 
 .searchHeader {
     font-family: "Apple Chancery",sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: blue;
     text-align: center;
     padding: 20px;
     margin: 10px;
 } /* Search Results Header */
 
-#output {
-    text-align: center;
-} /* Output Box Area */
-
-
 .bookPic, .title, .author, .rating, .desc {
-    font-family: 'Lato', sans-serif;
-    color: #fff;
+    font-family: 'Lato', arial;
+    color: blue;
     letter-spacing: 1px;
     text-align: center;
+    font-size: 50px;
 }
 
-.desc {
-    clear: both;
-    text-align: center;
-} /* Allows the book description to not have anything else either side of it */
 
 .arrayReturn {
     border: 1px solid #fff;
