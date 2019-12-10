@@ -145,13 +145,23 @@ To run the code locally, you can click on the link contained in the first paragr
 the project in a browser window. To clone or download the code for the project you can find it on github here:https://github.com/djjtyn/bookLookUp
 ,choose the option to either download or clone and follow the instructions onscreen.
 ## Credits
-###Media
+### Media
 For the background image, I chose an image from https://pngtree.com/. The full image URL can be found here: https://pngtree.com/freebackground/simple-book-tube-bookshelf-background-material_918534.html
 I chose to resize this image using an online photo enlarger tool found here: https://www.photoenlarger.com/
 For the loader gif, I chose a gif from https://giphy.com/. The full gif url can be found here:https://giphy.com/stickers/book-npuIsCFsoLGiQ
+For the favicon image, I chose an image from https://www.freefavicon.com/. The full url can be found here: https://www.freefavicon.com/freefavicons/icons/iconinfo/book-icon-152-191918.html
 The image of each book is taken directly from Google books using its API.
-I imported a font called Lato from Google fonts
-
+I imported a font called Lato from Google fonts.
+### Content
+Every books information is returned from the Google Books API. Apart from that all of the sites content is my own.
+### Acknowledgements
+* Google Books API: WIthout use of the Google Books API, I would not have been able to do this project. I read a lot of their
+documentation on how to use the API when neccessary.
+* Stack Overflow: I used a lot of information on Stack Overflow to allow me to enhance the site's functionality.
+* https://codingshiksha.com/: Due to the Google Books API not returning prev and next values in its response I had to 
+understand how to allow each book result list to only show 10 results and create previous and next buttons to show the next
+or previous ten results. I found an article here: https://codingshiksha.com/google-books-api-pagination-example-in-javascript
+which helped me to better understand how to paginate the API's response.
 
 
 
