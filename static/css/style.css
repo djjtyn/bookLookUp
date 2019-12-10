@@ -71,7 +71,6 @@ body{
     float: left; 
 } /* Floats the book picture to the left */
 
-
 /* Footer Area */
 footer {
     position: fixed;
@@ -82,60 +81,55 @@ footer {
     letter-spacing: 2px;
     opacity:0.9;
     margin-top: 20px;
-}
+} /* Footer styling */
 
 footer p {
     color: #000;
     font-family: 'Lato', sans-serif;
-    font-weight: 900;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    clear: both;
-}
+    margin: auto;
+} /* Footer text styling */
 
-/* Pagination */
+/* Pagination Buttons */
 button.nxt {
-  color:black;
-  font-family: 'Lato', sans-serif;
-  float: right;
-  background-color:red;
-  border: 1px solid #000;
-  border-radius: 25px;
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-  transition-timing-function: ease-in;
+    color:black;
+    font-family: 'Lato', sans-serif;
+    float: right;
+    background-color:red;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition-timing-function: ease-in;
 } /* Styling for the next pagination button */
 
 button.nxt:hover {
-  color:red;
-  background-color:black;
-  transition-duration: .5s;
+    color:red;
+    background-color:black;
+    transition-duration: .5s;
 } /* Next button hover actions */
 
 button.prev {
-  color:black;
-  font-family: 'Lato', sans-serif;
-  float: left;
-  background-color: red; 
-  border: 1px solid #000;
-  border-radius: 25px;
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-  transition-timing-function: ease-in;
+    color:black;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    background-color: red; 
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition-timing-function: ease-in;
 } /* Styling for the previous pagination button */
 
 button.prev:hover {
-  color:red;
-  background-color:black;
-  transition-duration: .5s;
+    color:red;
+    background-color:black;
+    transition-duration: .5s;
 }
 
-
 /* Media Queries */
-
 @media (min-width:360px) {
     .desc {
         padding: 10px 45px;
@@ -144,24 +138,24 @@ button.prev:hover {
 
 @media (max-width:991px) {
     .bookPic {
-    text-align: center;
-    padding: 10px;
+      text-align: center;
+      padding: 10px;
     } /* Book Picture is centre aligned on screen sizes up to 991px and padding is assigned */
     .arrayReturn ul li {
-    text-align: center; 
-    padding: 10px;   
+      text-align: center; 
+      padding: 10px;   
     } /* Title, author & rating are centre aligned on screen sizes up to 991px and padding is added */
 } 
 
 @media (min-width:992px) {
     .bookPic {
-    text-align: left;
-    padding: 20px;
+      text-align: left;
+      padding: 20px;
     } /* Book Picture is aligned to the left  on screen sizes 992px and above */
     .arrayReturn ul li  {
-    text-align: left;
-    transform: translateX(-20px);
-    padding: 20px;    
+      text-align: left;
+      transform: translateX(-20px);
+      padding: 20px;    
     } /* Title, author & rating are aligned and moved horizontantly to the left on screen sizes 992px and above */
 } 
 
