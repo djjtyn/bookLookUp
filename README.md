@@ -78,6 +78,7 @@ By clicking this button the user would be taken to a website which they can purc
  * CSS: This project uses CSS to provide styling to the HTML structure.
  * Bootstrap: I have used bootstrap in this project to help provide further structure to the page and aid the responsivness
  of the site.
+ * Bootswatch: I used a Bootswatch template called "Sketchy" for the navigation bar.
  * JavaScript: I have used Javascript to write functions for the site. These consist of getting the JSON response from the 
  Google Books API, allowing the user to search for a particular query, allow the screen to show a loading gif while the user
  is searching, outputting this response data in a particular way, allowing the pagination buttons to load pages in the 
@@ -135,6 +136,21 @@ pages and tested using the same method.
 to the console. I then noticed that some of the results were returning undefined so had to create a default value for these
 response returns. I tested this by outputting the response to the console using template literals within a function after coding
 a bit of code that gave the undefined response returns a custom value and searching for books that I kew had undefined values.
+## Deployment
+I have deployed this to Github and have been regularly adding and comitting changes to the projects local depository. I have
+used Gitpod entirely for coding and have been pushing any additions I make to the local depository onto Github as a precaution
+in case the changes didn't save in the project workspace so there are no differences between the deployed version and the 
+development version.
+To run the code locally, you can click on the link contained in the first paragraph of this readme file which should open
+the project in a browser window. To clone or download the code for the project you can find it on github here:https://github.com/djjtyn/bookLookUp
+,choose the option to either download or clone and follow the instructions onscreen.
+## Credits
+###Media
+For the background image, I chose an image from https://pngtree.com/. The full image URL can be found here: https://pngtree.com/freebackground/simple-book-tube-bookshelf-background-material_918534.html
+I chose to resize this image using an online photo enlarger tool found here: https://www.photoenlarger.com/
+For the loader gif, I chose a gif from https://giphy.com/. The full gif url can be found here:https://giphy.com/stickers/book-npuIsCFsoLGiQ
+The image of each book is taken directly from Google books using its API.
+I imported a font called Lato from Google fonts
 
 
 
