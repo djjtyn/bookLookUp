@@ -7,8 +7,12 @@ the book where available. The project makes use of the Google Books API to achie
 The website can be viewed by using this link: https://djjtyn.github.io/bookLookUp/
 
 ## UX
-<p>This site is designed for people who are interested in reading books and would like to find out some information
+This site is designed for people who are interested in reading books and would like to find out some information
 on the books they are planning to read before reading them.
+I chose to do a different design for the book results area than I initially designed in the mockup.
+I have arranged the book information orders in a particular way as I believe it is aesthetically pleasing. I chose to have
+the books image on the left of each section, the title, author and rating of the book in a list beside this with the book's 
+description underneath these.
 As a user, I want to get some information on a particular book. This is done by typing in the name of the book and the results
 for the book will show the title, author, average rating, description and picture of the book.
 As a user, I want to find out some book titles of a particular author, which I would achieve by typing the authors name 
@@ -24,7 +28,7 @@ bar which will take me to Amazons list of newly released books.
 As a user, I want to find some books which are best sellers. I can achieve this by clicking on the Best Sellers header in 
 the navigation bar which will take me to a list of Amazons best selling books.
 As a user, I want to find a good book released this month which I can achieve by clicking on the Book of the Month header
-in the navigation bar which will take me to a page containing Amazons book of the month.</p>
+in the navigation bar which will take me to a page containing Amazons book of the month.
 
 ### Wireframes
 
@@ -136,6 +140,12 @@ pages and tested using the same method.
 to the console. I then noticed that some of the results were returning undefined so had to create a default value for these
 response returns. I tested this by outputting the response to the console using template literals within a function after coding
 a bit of code that gave the undefined response returns a custom value and searching for books that I kew had undefined values.
+## Bugs
+I encountered a bug on the site that I was unable to fix. This occurs when a user searches for a book and clicks the previous
+button on the first page of results. This leads to a bug in the code which I have an error customised for. The easiest way to fix
+this will be to hide the previous button on the first page of results but due to the buttons being contained in a functions
+template literal html output I am unsure on how to do this as the API response doesn't include prev or next values and I have
+had to code the pagination into the API response. 
 ## Deployment
 I have deployed this to Github and have been regularly adding and comitting changes to the projects local depository. I have
 used Gitpod entirely for coding and have been pushing any additions I make to the local depository onto Github as a precaution

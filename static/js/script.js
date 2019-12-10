@@ -18,6 +18,7 @@ $("#searchField").keyup(function (event) {
 
 var _maxResults = 10;
 var _startIndex = 0;
+//Variables above to be used for JSON url. _startIndex altered inside functions
 
 function loader() {
   $("#output").html(`
@@ -117,17 +118,20 @@ function timedPrevLoad() {
 //Code above to set timeouts for both the loading of the page and the scroll to the top of the list after the previous button is clicked
 
 function scrollToTop() {
-    window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
+//Code above to scroll to the top of the page
 
 function load_next_page() {
-    _startIndex += _maxResults + 1;
-    return getBookInfo();
+  _startIndex += _maxResults + 1;
+  return getBookInfo();
 }
+//Code above to load the next page after next is clicked
 
 function load_prev_page() {
-    _startIndex = _startIndex - _maxResults - 1;
-    return getBookInfo();
-    }
+  _startIndex = _startIndex - _maxResults - 1;
+  return getBookInfo();
+}
+//Code above to load the previous page after previous is clicked
 
 
