@@ -18,7 +18,7 @@ $("#searchField").keyup(function (event) {
 
 var _maxResults = 10;
 var _startIndex = 0;
-//Variables above to be used for JSON url. _startIndex altered inside functions
+//Variables above to be used for JSON url. _startIndex  inside functions
 
 function loader() {
   $("#output").html(`
@@ -89,19 +89,31 @@ function iterate(bookInfo) {
       </div>
     </div>`
     })
-    return `
-    <div id="pagination_id">
-      <button class="nxt" onclick="timedNextLoad()">Next Page</button>
-      <button class="prev" onclick="timedPrevLoad()">Previous Page</button>
-    </div>
-    <div class="searchHeader">
-      <h2>Search Results</h2>
-    </div>
-    ${list}
-    <div id="pagination_id">
-    <button class="nxt" onclick="timedNextLoad()">Next Page</button>
-    <button class="prev" onclick="timedPrevLoad()">Previous Page</button>
-    </div>`
+    if (_startIndex == 0){
+      return `
+        <div id="pagination_id">
+          <button class="nxt" onclick="timedNextLoad()">Next Page</button>
+        </div>
+        <div class="searchHeader">
+          <h2>Search Results</h2>
+        </div>
+        ${list}
+        <div id="pagination_id">
+          <button class="nxt" onclick="timedNextLoad()">Next Page</button>
+        </div>`} 
+    else return `
+        <div id="pagination_id">
+          <button class="nxt" onclick="timedNextLoad()">Next Page</button>
+          <button class="prev" onclick="timedPrevLoad()">Previous Page</button>
+        </div>
+        <div class="searchHeader">
+          <h2>Search Results</h2>
+        </div>
+        ${list}
+        <div id="pagination_id">
+          <button class="nxt" onclick="timedNextLoad()">Next Page</button>
+          <button class="prev" onclick="timedPrevLoad()">Previous Page</button>
+        </div>`
 }
 //Code above to iterate through the API response array and format HTML output
 
