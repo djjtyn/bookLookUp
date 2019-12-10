@@ -93,8 +93,15 @@ HTML Validation was done using the validator found at "https://validator.w3.org/
 CSS Validation was done using the validator found at "https://jigsaw.w3.org/css-validator/". This validation test returned
 no errors.
 ![image](static/img/cssvalidation.png)
-* Loading Anmiation: 
+* Search Bar
+I had to check to see if the value that a user was being stored in a variable I had created to contain this value, I did this
+by creating the variable, adding text into the search field and using console log to ensure the value that was entered was
+being logged to the console.
+I also had to check that the enter button was being used to submit the value the user enters into the search bar. I did this
+by coding some code in jQuery that allows the enter key to have the same function as the search button beside the searchbox
+when it is pressed. I tested this by typing text into the searchbar and pressing the enter key.
 
+* Loading Anmiation: 
 I first included the loading animation in the function which contained the getJson url command but noticed that this wasnt
 working on any more searches after the first. I then created a new function specifically for the loading animation and then
 used it as the value of the oninput attribute for the input element which worked after I completed a search for more than
