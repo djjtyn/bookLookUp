@@ -9,7 +9,7 @@
 } /* NavBar Styling */
 
 body{
-    height: 100%;
+    height: 100vh;
     background-image: url("../img/book-bg.png");
     background-size: 100%;
     background-color: #678F94;
@@ -19,8 +19,9 @@ body{
 .quote {
     background-image: url("../img/quote.png");
     background-size: contain;
-    height: 310px;
+    height: 300px;
     width: 300px;
+    margin-bottom: 50px;
     background-repeat: no-repeat;
     background-position: center center; 
     margin-top: 25px;
@@ -29,55 +30,53 @@ body{
 #loader {
     text-align: center;
     visibility: visible;
-} /* loader styling */
+    margin-top: 30px;
+} /* position the loader in the middle of page and add a margin to the top */
 
 .hiddenUntil {
     visibility: hidden;
-} /* Search Results Area hidden until search submitted */
+} /* hides the book results until search query is submitted */
 
 .searchHeader {
     font-family: "Apple Chancery",sans-serif;
     font-weight: 700;
-    color: blue;
+    color: #fff;
     text-align: center;
     padding: 20px;
     margin: 10px;
 } /* Search Results Header */
 
 .bookPic, .title, .author, .rating, .desc {
-    font-family: 'Lato', arial;
-    color: blue;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
     letter-spacing: 1px;
     text-align: center;
-    font-size: 50px;
-}
+} /* styling for all the book results sections */
 
+.desc {
+    clear: both;
+} /* Allows the book description to not have anything else either side of it */
 
 .arrayReturn {
     border: 1px solid #fff;
     border-radius: 25px;
     background-color:#648C91;
-}
+} /* adds a border and background color to the book results area */
 
 .arrayReturn ul {
-    height: 150px;
     list-style: none;
-    padding: 5px;
-}
+} /* Removes the bullet points from the book results list(title, author and rating) section */
 
 .bookPic {
-    float: left;
-    text-align: center; 
-}
+    float: left; 
+} /* Floats the book picture to the left */
 
-.titleSection {
-    margin-bottom: 0px;
-}
 
 /* Footer Area */
 footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
+    background-color: rgb(255, 255, 255,.6);
     width: 100%;
     height: 30px;
     letter-spacing: 2px;
@@ -86,8 +85,9 @@ footer {
 }
 
 footer p {
-    color: #fff;
+    color: #000;
     font-family: 'Lato', sans-serif;
+    font-weight: 900;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -138,7 +138,7 @@ button.prev:hover {
 
 @media (min-width:360px) {
     .desc {
-        padding: 40px 45px;
+        padding: 10px 45px;
     } /* padding added to book description text */
 }
 
