@@ -100,6 +100,9 @@ being logged to the console.
 I also had to check that the enter button was being used to submit the value the user enters into the search bar. I did this
 by coding some code in jQuery that allows the enter key to have the same function as the search button beside the searchbox
 when it is pressed. I tested this by typing text into the searchbar and pressing the enter key.
+I had to make sure the user would be prompted when no text when a search query was submitted without a value in the searchbar.
+I did this by coding an alert to appear on screen when the user submitted a search query without a value which I tested by
+submitting a search query without any txt and checking to see if the alert box appeared.
 
 * Loading Anmiation: 
 I first included the loading animation in the function which contained the getJson url command but noticed that this wasnt
@@ -107,6 +110,23 @@ working on any more searches after the first. I then created a new function spec
 used it as the value of the oninput attribute for the input element which worked after I completed a search for more than
 one bok in a row.
 
+* Pagination:
+ * Page Selection: The Google Books API response doesnt return a pre and next response so I had to create these myself and have each book listing
+only show 10 results per page. I did this by creating max results and start indext variables and making use of these. I included
+both these variables in the getJson url. The max results variable was always set at 10. I then created a function to load 
+the next page and another to load the previous page. 
+For the load next page function I set the start index to equal the start
+index and the max results plus one. I then usd console log to check that the start index variable had a value. I then ran 
+the function containing the getJson method within this function. I created a next button and assigned the load next page 
+function to it's onclick attribute so that I was able to test the function by clicking the button and checking to see if 
+the next page loaded. 
+For the load previous page function I set the start index to equal the start index minus the max results minus one. I then 
+used console log to check that the start index variable had a value. I then ran the function containing the getJson method 
+within this function. I created a previous button and assigned the load previous page function to it's onclick attribute so
+that I was able to test the function by clicking the button and checking to see if the next page loaded.
+ *New and previous page scrolling to the top of the list: To ensure that anytime the user clicked the previous or next buttons
+that the new list atarted at the top allowing the user to scroll downward through the list again, I had to create a function
+called scrollToTop.
 
 
 
