@@ -27,7 +27,7 @@ body{
 .quote {
     background-image: url("../img/quote.png");
     background-size: contain;
-    height: 300px;
+    height: 270px;
     width: 300px;
     margin-bottom: 50px;
     background-repeat: no-repeat;
@@ -38,7 +38,8 @@ body{
 #loader {
     text-align: center;
     visibility: visible;
-    margin-top: 30px;
+    margin-top: 10px;
+    padding: 0;
 } /* position the loader in the middle of page and add a margin to the top */
 
 .hiddenUntil {
