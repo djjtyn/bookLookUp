@@ -8,6 +8,14 @@
     margin-right: 15px;
 } /* NavBar Styling */
 
+.fa-book-open {
+    font-size: 30px;
+} /* Navbar book icon size */
+
+.fa-book-open:hover {
+    color: red;
+}
+
 body{
     height: 100vh;
     background-image: url("../img/book-bg.png");

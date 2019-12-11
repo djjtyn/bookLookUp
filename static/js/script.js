@@ -80,7 +80,7 @@ function iterate(bookInfo) {
             <h6>Author(s): ${list.volumeInfo.authors}</h6>
           </li>
           <li class = "rating">
-            <p>Rating: ${list.volumeInfo.averageRating}</p>
+            <p>Rating(5): ${list.volumeInfo.averageRating}</p>
           </li>
         </ul>
       </div>
