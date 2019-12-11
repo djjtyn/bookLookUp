@@ -41,7 +41,7 @@ the colors' of the background image suited the style of site I was trying to cre
 would only attract habitual readers.<br>
 Before submitting a search there is an image of a Dr. Seuss quote which highlights the advantage of reading. I added this
 to the site in an effort to entice non-readers to use the site to find a book they may consider reading.<br>
-While the user is typing a value into the search bar a loader gif appears. This gif is of a book with it's pages turning. If
+While the user is typing a value into the search bar a loader gif appears. This gif is of a book with it's pages turning. I
 chose this gif as I believe it suits the sites purpose.<br>
 After a search query is submitted, the quote image disappears from the screen and the search bar area jumps to the top of 
 the screen. I chose to do this to create more space for the book results which are listed below the search bar.<br> 
