@@ -51,7 +51,7 @@ Each book details area contains the title, author, review, picture and descripti
 in the left of the books area with the books title,author and rating beside it and the description underneath these. I thought
 that would look like a nice organised way to present the book details.<br>
 I decided to put next and previous pagination buttons on both the top and bottom of the search results area. I decided to do 
-this because if anybody seen a book they liked on a previous page and wanted to go back a page to see details for it again
+this because if anybody saw a book they liked on a previous page and wanted to go back a page to see details for it again
 rather than scrolling all the way to the bottom of the page to find the previous button, they could select it from the top
 of the page.<br>
 The pagination buttons change font and background color with a smooth transition when they are hovered over and the mouse
@@ -64,7 +64,7 @@ enter on the keyboard or click the search icon to submit their search.
 * Navigation Bar
   * Branding: The icon on the left of the navigation bar is a font awesome icon of a book. If this icon is clicked on the 
 user will be taken back to the initial search home page no matter how far into their results list they are. <br>
-The icon color changes to red when the mouse hovers onto it. I chose to do this as I believe it makes it look cleaerer when
+The icon color changes to red when the mouse hovers onto it. I chose to do this as I believe it makes it look clearer when
 the mouse is in the correct position to click the icon and then send the user back to the home page.
   * Headings: The navigaton bar headings all link to Amazon pages. If the user wants some information on newly released books
   the New Releases option in the Navbar will open up Amazons page for newly released books in a new tab. This is the same 
