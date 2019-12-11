@@ -45,7 +45,7 @@ While the user is typing a value into the search bar a loader gif appears. This 
 chose this gif as I believe it suits the sites purpose.<br>
 After a search query is submitted, the quote image disappears from the screen and the search bar area jumps to the top of 
 the screen. I chose to do this to create more space for the book results which are listed below the search bar.<br> 
-I chose to have 10 book results per page as I was conscious that having a higiher number than 10 books per page could cluster
+I chose to have 10 book results per page as I was conscious that having a higiher number than 10 books per page could clutter
 the page and not look as good.<br>
 Each book details area contains the title, author, review, picture and description of the book. I chose to have the picture
 in the left of the books area with the books title,author and rating beside it and the description underneath these. I thought
@@ -104,7 +104,7 @@ CSS Validation was done using the validator found at "https://jigsaw.w3.org/css-
 no errors.
 ![image](static/img/cssvalidation.png)<br>
 * Search Bar
-I had to check wheither the text that a user typed into the searchbar was being stored in a variable I had created to contain 
+I had to check whether the text that a user typed into the searchbar was being stored in a variable I had created to contain 
 it. I tested this by creating the variable, adding text into the search field and using console log to ensure the value that was entered was
 being logged to the console.<br>
 I also had to check that the enter button was being used to submit the value the user entered into the search bar. I tested this 
@@ -142,10 +142,10 @@ I also did this for the previous pages and tested using the same method.
 * Json Response: I had to check that I was receiving a response from the Google Books API which I did by logging the response
 to the console. I then noticed that some of the results were returning undefined so had to create a default value for these
 response returns. I tested this by outputting the response to the site using template literals within a function after coding
-a bit of code that gave the undefined response returns a custom value and searching for books that I kew had undefined values
+a bit of code that gave the undefined response returns a custom value and searching for books that I knew had undefined values
 to check they were returning the default values I had assigned to them if the initial value was undefined.
 ## Bugs
-I encountered a bug on the site that I was unable to fix. This occured when a user searched for a book and clicked the previous
+I encountered a bug on the site that I was able to fix. This occured when a user searched for a book and clicked the previous
 button on the first page of results. This led to a bug in the code which. I had an cutomised error message to show for when
 this occured but I resolved this by hiding the previous button on the first page of book results.
 ## Deployment
