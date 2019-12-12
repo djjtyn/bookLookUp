@@ -99,7 +99,7 @@ function iterate(bookInfo) {
         </div>
         ${list}
         <div id="pagination_id">
-          <button class="nxt" onclick="timedNextLoad()">Next Page</button>
+          <button class="nxt bottombtn" onclick="timedNextLoad()">Next Page</button>
         </div>`} 
     else return `
         <div id="pagination_id">
@@ -111,8 +111,8 @@ function iterate(bookInfo) {
         </div>
         ${list}
         <div id="pagination_id">
-          <button class="nxt" onclick="timedNextLoad()">Next Page</button>
-          <button class="prev" onclick="timedPrevLoad()">Previous Page</button>
+          <button class="nxt bottombtn" onclick="timedNextLoad()">Next Page</button>
+          <button class="prev bottombtn" onclick="timedPrevLoad()">Previous Page</button>
         </div>`
 }
 //Code above to iterate through the API response array and format HTML output
